@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <!--<DataBase dataprovider="System.Data.SqlClient" connectionstring="Data Source=LAB01-PC;Initial Catalog=EduDB;User ID=sa;Password=lab01"/>-->
+  <DataBase dataprovider="System.Data.SQLite" connectionstring="Data Source= DBFile "/>
+  <FeeTypes>
+    <Fee typename="高起专_业余" criterion="8700 3480,3480,1740" criteriondescription="第一年,第二年,第三年" ></Fee>
+    <Fee typename="高起专_集中授课"  criterion="8700 5220,3480" criteriondescription="第一年,第二年" ></Fee>
+    <Fee typename="高起本_业余"  criterion="15950 3190,3190,3190,3190,3190" criteriondescription="第一年,第二年,第三年,第四年,第五年"></Fee>
+    <Fee typename="高起本_集中授课" criterion="15950 6380,6380,3190" criteriondescription="第一年,第二年,第三年"></Fee>
+    <Fee typename="专升本_艺术类_业余" criterion="9570 3828,3828,1914" criteriondescription="第一年,第二年,第三年"></Fee>
+    <Fee typename="专升本_艺术类_集中授课" criterion="9570 5742,3828" criteriondescription="第一年,第二年"></Fee>
+    <Fee typename="专升本_非艺术类_业余" criterion="6090 2436,2436,1218" criteriondescription="第一年,第二年,第三年"></Fee>
+  </FeeTypes>
+  <AuthTypes>
+    <AuthType typename="管理员">
+      <Auth Name="EditBaseInfo"/>
+      <Auth Name="EditFeeInfo"/>
+      <Auth Name="EditICardInfo"/>
+    </AuthType>
+    <AuthType typename="普通用户">
+      
+    </AuthType>
+  </AuthTypes>
+</Settings>

@@ -1,0 +1,8 @@
+F:\workspacecsharp\RecentProject\EduInfoSystem\Test\bin\Debug\Test.exe
+F:\workspacecsharp\RecentProject\EduInfoSystem\Test\bin\Debug\Test.pdb
+F:\workspacecsharp\RecentProject\EduInfoSystem\Test\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\workspacecsharp\RecentProject\EduInfoSystem\Test\obj\x86\Debug\Test.exe
+F:\workspacecsharp\RecentProject\EduInfoSystem\Test\obj\x86\Debug\Test.pdb
+F:\workspacecsharp\RecentProject\EduInfoSystem\Test\bin\Debug\System.Data.SQLite.dll
+F:\workspacecsharp\RecentProject\EduInfoSystem\Test\bin\Debug\Ionic.Zip.dll
+F:\workspacecsharp\RecentProject\EduInfoSystem\Test\bin\Debug\NPOI.dll

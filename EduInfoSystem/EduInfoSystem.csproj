@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB3B0C42-6CF9-4E84-B323-F2156E21DA62}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EduInfoSystem</RootNamespace>
+    <AssemblyName>EduInfoSystem</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>Libs\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="RandomGenerator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ConsoleProj\RandomAttributeGenerator\RandomGenerator\bin\Debug\RandomGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthorityManagement\AuthPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AuthorityManagement\AuthPanel.Designer.cs">
+      <DependentUpon>AuthPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorityManagement\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorityManagement\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInfo\HeadImageManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInfo\HeadImageManageForm.Designer.cs">
+      <DependentUpon>HeadImageManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigReader.cs" />
+    <Compile Include="FeeManagement\FeeManager.cs" />
+    <Compile Include="FeeManagement\FeePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FeeManagement\FeePanel.Designer.cs">
+      <DependentUpon>FeePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeeManagement\FeeTypeManagePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FeeManagement\FeeTypeManagePanel.Designer.cs">
+      <DependentUpon>FeeTypeManagePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeeManagement\ImportXLSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeeManagement\ImportXLSForm.Designer.cs">
+      <DependentUpon>ImportXLSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeeManagement\SingleEditPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FeeManagement\SingleEditPanel.Designer.cs">
+      <DependentUpon>SingleEditPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeeManagement\SingleFeeInfoEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeeManagement\SingleFeeInfoEditForm.Designer.cs">
+      <DependentUpon>SingleFeeInfoEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICManagement\ICInputPanel2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ICManagement\ICInputPanel2.Designer.cs">
+      <DependentUpon>ICInputPanel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AuthInfo.cs" />
+    <Compile Include="BaseInfo\ConditionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInfo\ConditionForm.Designer.cs">
+      <DependentUpon>ConditionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInfo\EditPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseInfo\EditPanel.Designer.cs">
+      <DependentUpon>EditPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInfo\InfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInfo\InfoForm.Designer.cs">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInfo\ComplexInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseInfo\ComplexInfoPanel.Designer.cs">
+      <DependentUpon>ComplexInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInfo\GridPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseInfo\GridPanel.Designer.cs">
+      <DependentUpon>GridPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInfo\ImportXLSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInfo\ImportXLSForm.Designer.cs">
+      <DependentUpon>ImportXLSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInfo\SimpleBaseInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseInfo\SimpleBaseInfoPanel.Designer.cs">
+      <DependentUpon>SimpleBaseInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInfo\SimpleListPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseInfo\SimpleListPanel.Designer.cs">
+      <DependentUpon>SimpleListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Model\CardInfo.cs" />
+    <Compile Include="ICManagement\ICInputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ICManagement\ICInputPanel.Designer.cs">
+      <DependentUpon>ICInputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICManagement\ICPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ICManagement\ICPanel.Designer.cs">
+      <DependentUpon>ICPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICManagement\LockICForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ICManagement\LockICForm.Designer.cs">
+      <DependentUpon>LockICForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICManagement\NewICMadeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ICManagement\NewICMadeForm.Designer.cs">
+      <DependentUpon>NewICMadeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IO\XLSHelper.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BaseClass.cs" />
+    <Compile Include="Model\DataCalls.cs" />
+    <Compile Include="Model\DataHelper.cs" />
+    <Compile Include="Model\FeeInfo.cs" />
+    <Compile Include="Model\Student.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToolControls\ExcelHelper.cs" />
+    <Compile Include="ToolControls\ProgressWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolControls\ProgressWindow.Designer.cs">
+      <DependentUpon>ProgressWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolControls\PublicExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolControls\PublicExportForm.Designer.cs">
+      <DependentUpon>PublicExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolControls\SearchBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolControls\SearchBar.Designer.cs">
+      <DependentUpon>SearchBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolControls\Tools.cs" />
+    <EmbeddedResource Include="AuthorityManagement\AuthPanel.resx">
+      <DependentUpon>AuthPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorityManagement\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInfo\ConditionForm.resx">
+      <DependentUpon>ConditionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInfo\EditPanel.resx">
+      <DependentUpon>EditPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInfo\HeadImageManageForm.resx">
+      <DependentUpon>HeadImageManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInfo\InfoForm.resx">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInfo\ComplexInfoPanel.resx">
+      <DependentUpon>ComplexInfoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInfo\GridPanel.resx">
+      <DependentUpon>GridPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInfo\ImportXLSForm.resx">
+      <DependentUpon>ImportXLSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInfo\SimpleBaseInfoPanel.resx">
+      <DependentUpon>SimpleBaseInfoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInfo\SimpleListPanel.resx">
+      <DependentUpon>SimpleListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeeManagement\FeePanel.resx">
+      <DependentUpon>FeePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeeManagement\FeeTypeManagePanel.resx">
+      <DependentUpon>FeeTypeManagePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeeManagement\ImportXLSForm.resx">
+      <DependentUpon>ImportXLSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeeManagement\SingleEditPanel.resx">
+      <DependentUpon>SingleEditPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeeManagement\SingleFeeInfoEditForm.resx">
+      <DependentUpon>SingleFeeInfoEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ICManagement\ICInputPanel.resx">
+      <DependentUpon>ICInputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ICManagement\ICInputPanel2.resx">
+      <DependentUpon>ICInputPanel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ICManagement\ICPanel.resx">
+      <DependentUpon>ICPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ICManagement\LockICForm.resx">
+      <DependentUpon>LockICForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ICManagement\NewICMadeForm.resx">
+      <DependentUpon>NewICMadeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ToolControls\ProgressWindow.resx">
+      <DependentUpon>ProgressWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolControls\PublicExportForm.resx">
+      <DependentUpon>PublicExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolControls\SearchBar.resx">
+      <DependentUpon>SearchBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Libs\DBFile" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\ImageOnload\default.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\ImageOnload\logo2.ico" />
+    <Content Include="Image\Login\loginlogo.bmp" />
+    <Content Include="Libs\DevComponents.DotNetBar2.dll" />
+    <Content Include="Libs\Ionic.Zip.dll" />
+    <Content Include="Libs\NPOI.dll" />
+    <Content Include="Libs\RandomGenerator.dll" />
+    <Content Include="Libs\System.Data.SQLite.dll" />
+    <Content Include="Log.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Image\Buttons\" />
+    <Folder Include="Image\Export\" />
+    <Folder Include="Image\ICOS\" />
+    <Folder Include="Image\MainForm\" />
+    <Folder Include="Image\Menu\1\" />
+    <Folder Include="Image\Menu\2\" />
+    <Folder Include="Image\Menu\3\" />
+    <Folder Include="Image\Menu\6\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
